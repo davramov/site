@@ -1,0 +1,154 @@
+<!doctype html>
+<head><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet"></head>
+<title>David Abramov</title>
+<style>
+    
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+      
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+
+  }
+
+
+  .col-1 {
+    background: #444;
+    width: 10%;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%
+  }
+    .col-3 {
+    background: #444;
+    width: 10%;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 90vh;
+  }
+  .header {
+    background: #444;
+    height: 4vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    
+  }
+  footer {
+      background: #fff;
+      height: 0vh;
+  }
+  header, footer, article, nav {
+    padding: 1em;
+      
+  }
+  article {
+  background: #fff;
+  color: #000;
+      
+      
+  }
+  img {
+      width: 100%;
+  }
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+</style>
+<body>
+  <nav class="col-1">
+    </nav>
+  <div class="col-2">
+  	<div class="header" id="myHeader"><h2>DAVID ABRAMOV</h2></div>
+    <main class="content">
+    <article>
+        <h2>About me</h2>
+        <p>I am a masters student in Computational Media at University of California Santa Cruz</p>
+        
+        <h1>IGM-Vis</h1>
+        <p><a href="https://github.com/CreativeCodingLab/Intergalactic">Github Repository</a>
+        <a href="https://arxiv.org/abs/1812.07092">IGM-Vis: Analyzing Intergalactic and Circumgalactic Medium Absorption Using Quasar Sightlines in a Cosmic Web Context - arxiv</a>
+        </p>
+        <img src="img/IGM-vis.jpg">
+        <img src="img/IGM-vis-1.png">
+        
+        <h1>Throw Me Away</h1>
+        <img src="img/danm-poster.jpg">
+        <iframe src="https://player.vimeo.com/video/309172105" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/309172057" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        
+        <h1>VR Location History</h1>
+        <a href="https://github.com/davramov/immersive-analytics/tree/master/VR%20Location%20History">Github repository</a>
+        <img src="https://raw.githubusercontent.com/davramov/immersive-analytics/master/VR%20Location%20History/screenshots/Capture.PNG">
+        <img src="https://raw.githubusercontent.com/davramov/immersive-analytics/master/VR%20Location%20History/screenshots/Capture1.PNG">
+        
+        
+        <h1>US Wildfire Analysis</h1>
+         <a href="https://colab.research.google.com/drive/1wvjfEKKlyo6U720KAxLEUKgZCPVTHKs9">Google Colab Notebook - Cluster Analysis</a>
+        <a href="https://docs.google.com/document/d/1auVuh37gExeE0vusSE7jsEVLF0sCZb8tvjOdVC45T0w/edit?usp=sharing">Final Paper</a>
+        
+        <img src="img/wildfire-cluster.png">
+        <img src="img/wildfire-cluster1.png">
+        
+        <h1>Predicting Clinical Outcomes from Non-Small Cell Lung Cancer (NSCLC) Patient Data</h1>
+        <a href="misc/cancer.pptx" download>Final presentation</a>
+        <a href="https://github.com/davramov/Data-Analysis-and-Regression/tree/master/LC_FinalProj" >Github repository</a>
+        <img src="img/survival.png">
+        
+        <h1>Fake Windows</h1>
+        <a href="https://davramov.github.io/web-art-and-design/windows/index.html"><img src="img/windows-throwback.png"></a>
+        
+       
+        
+        <h1>Weather Balloon Altitude Control System</h1>
+         <a href="https://github.com/davramov/code/tree/master/far%20horizons">Github repository</a>
+        <a href="http://farhorizonsfellowship.tumblr.com/"><img src="https://66.media.tumblr.com/86ed69670cb5bc941a84e93f6209b29b/tumblr_oeag76u91I1vyt7too1_1280.jpg"></a>
+        
+        <iframe src="https://player.vimeo.com/video/184948745" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        
+        
+       
+        </article>
+    </main>
+  	<footer></footer>
+  </div>
+    <div class ="col-3"></div>
+</body>
+<script>// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>
