@@ -1,7 +1,10 @@
 <!doctype html >
 <html lang="en">
 
+
 <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="David Abramov's Portfolio. Data Scientist, Visualization Researcher, Creative Coding, Artist">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/vcr2znl.css">
     <title>David Abramov</title>
@@ -10,6 +13,7 @@
 </head>
 
 <body>
+
     <nav class="col-1">
         <pattern></pattern>
     </nav>
@@ -18,13 +22,13 @@
 
             <h2>David Abramov</h2>
 
-            <img loading="lazy" loading="lazy" id="pin-icon" class="icon" src="static/svg/pin.svg" alt="location" onclick="infoToggle('pin')" />
+            <img loading="lazy" id="pin-icon" class="icon" alt="location" src="static/svg/pin.svg" alt="location" onclick="infoToggle('pin')" />
             <div id="pin-text">santa cruz, ca</div>
-            <img loading="lazy" loading="lazy" id="email-icon" class="icon" src="static/svg/email.svg" alt="email" onclick="infoToggle('email')" />
+            <img loading="lazy" id="email-icon" class="icon" alt="email" src="static/svg/email.svg" alt="email" onclick="infoToggle('email')" />
             <div id="email-text">dabramov @ ucsc . edu</div>
-            <img loading="lazy" loading="lazy" id="phone-icon" class="icon" src="static/svg/phone-call.svg" alt="phone" onclick="infoToggle('phone')" />
+            <img loading="lazy" id="phone-icon" class="icon" alt="phone" src="static/svg/phone-call.svg" alt="phone" onclick="infoToggle('phone')" />
             <div id="phone-text">(708) 244 - 7729</div>
-            <img loading="lazy" id="share-icon" class="icon" src="static/svg/share.svg" alt="linkedin" onclick="infoToggle('share')" />
+            <img loading="lazy" id="share-icon" class="icon" alt="linkedin" src="static/svg/share.svg" alt="linkedin" onclick="infoToggle('share')" />
             <div id="share-text"><a href="https://www.linkedin.com/in/duvu/">LinkedIn</a></div>
 
         </header>
@@ -84,12 +88,12 @@
                                     direct comparisons with observational datasets.</p>
                             </div>
                             <div class="images">
-                                <img loading="lazy" src="static\images\sheet_use_case_1.png" style="width:100%">
-                                <img loading="lazy" src="static\images\512EAGLE12Mpc.PNG" style="width:100%">
-                                <img loading="lazy" src="static\images\512EAGLE25Mpc.PNG" style="width:100%">
-                                <img loading="lazy" src="static\images\512TNG100Mpc_z2_3_slice10.png" style="width:100%">
-                                <img loading="lazy" src="static\images\cosmovis_useCase3_updated.png" style="width:100%">
-                                <img loading="lazy" src="static\images\TNG100_z2.3_teaser_highres_adjusted.png" style="width:100%">
+                                <img loading="lazy" alt="cosmic sheets" src="static\images\sheet_use_case_1.png" style="width:100%">
+                                <img loading="lazy" alt="12 Megaparsec EAGLE simulation" src="static\images\512EAGLE12Mpc.PNG" style="width:100%">
+                                <img loading="lazy" alt="25 Megaparsec EAGLE simulation" src="static\images\512EAGLE25Mpc.PNG" style="width:100%">
+                                <img loading="lazy" alt="15 Megarsec slice" src="static\images\512TNG100Mpc_z2_3_slice10.png" style="width:100%">
+                                <img loading="lazy" alt="metallicity" src="static\images\cosmovis_useCase3_updated.png" style="width:100%">
+                                <img loading="lazy" alt="multiple attributes" src="static\images\TNG100_z2.3_teaser_highres_adjusted.png" style="width:100%">
                             </div>
                         </div>
 
@@ -473,6 +477,16 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener('touchstart', onTouchStart, {
+        passive: true
+    });
+
+    function onTouchStart() {
+
+    }
+</script>
 <!-- <script>// When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
