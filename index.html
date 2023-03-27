@@ -52,9 +52,12 @@
         <div id="about">
             <h3>about me</h3>
             <div id="about-me">
-                <p><img loading="lazy" id="david" src="static/images/david.png" alt="david" />I am a PhD student in the Creative Coding Lab in the Department of Computational Media at University of California Santa Cruz. My research interests are interactive
-                    visualization techniques to make complex datasets more accessible, designing digital tools for task-driven workflows, and the connection between modern technology (AI/ML) and art. I have published and presented my work at the IEEE
-                    VIS and EuroVis conferences.
+                <p><img loading="lazy" id="david" src="static/images/david.png" alt="david" />I am a PhD Candidate in Computational Media at University of California Santa Cruz in the Creative Coding Lab, and I received my BS in Biology and Physics from DePaul University in Chicago.
+                    My research focus is on creating interactive visualization tools for navigating complex scientific dataset, and exploring the connection between art and digital media.
+                    At UCSC, I have taught Game Technologies, covering how to make a game in Unity, and I have been a teaching assistant for Game Graphics and Real-time Rendering, Game Engines, Creating Digital Audio, and Musical Data.
+                    During my PhD I have interned at NASA JPL/Caltech/Artcenter, and Universidad de los Andes in Colombia.
+                    I presented my research at the IEEE VIS and EuroVis conferences, and have been published in IEEE TVCG, VIS, and EuroVis journals.
+                    Before grad school, I worked in Chicago as a Junior Clinical Data Analyst at Tempus Labs, interned at the Adler Planetarium building a weather balloon altitude control system, and worked backstage as an Artistic Associate at Shattered Globe Theatre Company.
                 </p>
                 <img loading="lazy" id="file-icon" src="static/svg/file.svg" alt="resume+cv" />
                 <div id="file-text"><a href="static/documents/David Abramov - Resume.pdf">[ Resume ]</a><a href="static/documents/David Abramov - CV.pdf">[ CV
@@ -72,14 +75,20 @@
                 <div id="projects">
                     <div class="project">
                         <div class="caption">
-                            <h4>CosmoVis</h4>
+                            <h4>CosmoVis: An Interactive Visual Analysis Tool for Exploring Hydrodynamic Cosmological Simulations</h4>
                         </div>
                         <div class=details>
                             <div class="video">
+
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://drive.google.com/file/d/1a_X2AfBIoc_1OXIR4yRYXoSWPJzI35O8/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay"></iframe></div>
                                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" title="CosmoVis Demo" src="https://player.vimeo.com/video/535010028?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
                                         allowfullscreen></iframe></div>
                                 <script src="https://player.vimeo.com/api/player.js"></script>
+
+                                
+
                             </div>
+                            
                             <div class="text-description">
                                 <p>CosmoVis is an open-source web-based astrophysics visualization tool that facilitates the interactive analysis of large-scale hydrodynamic cosmological simulation datasets. CosmoVis enables astrophysicists as well as citizen
                                     scientists to share and explore these datasets, which are often comprised of complex, unwieldy data structures greater that 1 TB in size. Our tool visualizes a range of salient gas, dark matter, and stellar attributes
@@ -100,10 +109,110 @@
 
                         <div class="links">
                             <img loading="lazy" id="file-icon" src="static/svg/file.svg" alt="cosmovis paper" />
-                            <div id="file-text"><a href="static/documents/cosmovis_paper.pdf">[ paper ]</a></div>
+                            <div id="file-text"><a href="static/documents/Abramov_CosmoVis_TVCG_2022.pdf">[TVCG 2022 Paper ]</a></div>
                             <img loading="lazy" id="cv-coding-icon" class="coding-icon" src="static/svg/coding.svg" alt="github" />
                             <div class="github-link"><a href="https://github.com/CreativeCodingLab/CosmoVis">[ github ]</a></div>
                         </div>
+                    </div>
+
+                    <!-- <div class="project">
+                        <div class="caption">
+                            <h4>Game Technologies - CMPM 121 Course Instructor</h4>
+                        </div>
+                        <div class=details>
+                            
+                        </div>
+                        <div class="links">
+                            <img loading="lazy" id="cv-coding-icon" class="coding-icon" src="static/svg/coding.svg" alt="demo" />
+                            <div class="github-link"><a href="https://colev.enflujo.com/pronostico-covid19/">[ demo ]</a></div>
+                        </div>
+
+                    </div> -->
+
+                    <div class="project">
+                        <div class="caption">
+                            <h4>COLEV Tendencias: An Interactive Word Stream Visualization</h4>
+                        </div>
+                        <div class=details>
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://drive.google.com/file/d/1RMtnS1jJeXH7PWJXI6dWYG5_k8bQ7v1Y/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay"></iframe></div>
+                            <div class="text-description">
+                                <p>In the summer of 2022 I traveled to Bogota, Colombia to intern in Lab En Flujo ("in flow") and contributed to this words stream visualization using HTML, CSS, JS, THREE.js and custom shader code.
+                                    The goal of this visualization is to see the frequency of a set of keywords from Twitter how it changes over time by encoding the frequency as the height of the word.
+                                    In a traditional "word map", a piece of text is analyzed and each word is visualzied once, where the size is determined by the frequency of that word.
+                                    However in this case, we want to see the use of words changes over time and visualize them in a visual "stream" of words.
+                                </p>
+                            </div>
+                            <!-- <iframe src="https://drive.google.com/file/d/1RMtnS1jJeXH7PWJXI6dWYG5_k8bQ7v1Y/preview" width="640" height="480" allow="autoplay"></iframe> -->
+                            <div class="images">
+                                <!-- <p>AddiScreenshots</p> -->
+                                <img loading="lazy" src="static\images\word_stream.png" style="width:100%">
+                                <img loading="lazy" src="static\images\word_stream_zoom.png" style="width:100%">
+
+
+                            </div>
+                            
+                            <!-- <div class="video">
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" title="DenseVos Video" src="https://player.vimeo.com/video/524070817?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                        allowfullscreen></iframe></div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
+                            </div>
+                           
+                            <div class="images">
+                                <p>Process Work</p>
+                                <img loading="lazy" src="static\images\vos_process1.gif" style="width:100%">
+                                <img loading="lazy" src="static\images\vos_process2.gif" style="width:100%">
+
+                            </div> -->
+                        </div>
+                        <div class="links">
+                            <img loading="lazy" id="cv-coding-icon" class="coding-icon" src="static/svg/coding.svg" alt="github" />
+                            <div class="github-link"><a href="https://github.com/davramov/colev-tendencias">[ github ]</a></div>
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <div class="caption">
+                            <h4>Pronóstico de Covid-19 en Colombia: Covid-19 Forecast in Colombia</h4>
+                        </div>
+                        <div class=details>
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://drive.google.com/file/d/1ZYb-bt9ugEvJlIZEgkL1gDflFZGmhc1T/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay"></iframe></div>
+
+                            <!-- <iframe src="https://drive.google.com/file/d/1ZYb-bt9ugEvJlIZEgkL1gDflFZGmhc1T/preview" width="640" height="480" allow="autoplay"></iframe> -->
+                            <div class="text-description">
+                                <p>I worked on this project in collaboration with Lab En Flujo ("in flow") when I was an intern in Bogota, Colombia.
+                                    The goal of this tool was to compare recorded Covid-19 case and death rates with the predictions created by statisticians.
+                                    Users can select between seeing case and death rates, daily and weekly aggregations, and filter future predictions based on the selected date, along with confidence intervals.
+                                    A tooltip appears when hovering over chart, and users can zoom in to a smaller time period using the slider at the bottom.
+                                    This interactive data visualization was created using D3.js.</p>
+                            </div>
+                            <div class="images">
+                                <!-- <p>Screenshots</p>
+                                <img loading="lazy" src="static\images\pronostico.png" style="width:100%"> -->
+
+                            </div>
+                            <!-- <div class="video">
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" title="DenseVos Video" src="https://player.vimeo.com/video/524070817?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                        allowfullscreen></iframe></div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
+                            </div>
+                            
+                            <div class="images">
+                                <p>Process Work</p>
+                                <img loading="lazy" src="static\images\vos_process1.gif" style="width:100%">
+                                <img loading="lazy" src="static\images\vos_process2.gif" style="width:100%">
+
+                            </div> -->
+                        </div>
+                        <div class="links">
+                            <img loading="lazy" id="cv-coding-icon" class="coding-icon" src="static/svg/coding.svg" alt="demo" />
+                            <div class="github-link"><a href="https://colev.enflujo.com/pronostico-covid19/">[ demo ]</a></div>
+                            <img loading="lazy" id="cv-coding-icon" class="coding-icon" src="static/svg/coding.svg" alt="github" />
+                            <div class="github-link"><a href="https://github.com/davramov/colev-pronostico-covid19">[ github ]</a></div>
+
+                        </div>
+
+
                     </div>
 
                     <div class="project">
