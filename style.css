@@ -1,3 +1,28 @@
+@media only screen and (max-width: 1199px) {
+    .col-1{
+        width: 10vw;
+    }
+    .col-2{
+        width: 80vw;
+    }
+    .col-3{
+        width: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-1{
+        width: 20vw;
+    }
+    .col-2{
+        width: 60vw;
+    }
+    .col-3{
+        width: 20vw;
+    }
+}
+
+
 * {
     box-sizing: border-box;
     transition: all 0.3s ease;
@@ -183,7 +208,7 @@ article {
     background-position: center;
     background-repeat: repeat;
     /* background-size: cover; */
-    width: 10vw;
+    /* width: 10vw; */
     background-position-y: 0.5vw;
     filter: drop-shadow(0px 4px 10px blue);
 }
@@ -198,7 +223,7 @@ article {
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
-    width: 94vw;
+    /* width: 94vw; */
     background-position-y: 0.5vw;
     filter: drop-shadow(0px 4px 10px blue);
 }
@@ -212,7 +237,7 @@ article {
     background-position: center;
     background-repeat: repeat;
     /* background: #ff9445; */
-    width: 10vw;
+    /* width: 10vw; */
     background-position-y: 0.5vw;
     filter: drop-shadow(0px 4px 10px blue);
 }
@@ -231,7 +256,7 @@ h1 {
     margin-top: 2vw;
     margin-bottom: 2vw;
     font-weight: lighter;
-    font-size: 9.4vw;
+    font-size: .4vw;
     text-align: center;
     /* place-content: center; */
     color: #000e6f;
@@ -245,12 +270,12 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    font-size: 9.2vw;
+    font-size: 6.7vw;
     color: #ff00009c;
     text-shadow: 4px 0px 1px #00dcff;
     box-shadow: inset 0 0 7px 1px #0f0d00a3;
     border-radius: 8vw;
-    margin-bottom: 3vw;
+    margin-bottom: 1.5vw;
     background-color: #f1ff89cf;
 }
 
@@ -266,13 +291,15 @@ h2:hover {
 h3 {
     margin-top: 0;
     margin-bottom: 1vh;
-    font-weight: lighter;
-    font-size: 9.4vw;
+    font-weight: 800;
+    font-size: 6.4vw;
     text-align: center;
-    color: #2d3f00de;
-    text-shadow: 1px 0px 4px #005c0bbd;
-    text-decoration: underline;
+    /* color: #2d3f00de; */
+    text-shadow: 0px 0px 25px #ffffff;
+    /* text-decoration: underline; */
     text-decoration-thickness: 0.4vw;
+    font-family: hero-new, sans-serif;
+
 }
 
 h4 {
@@ -312,20 +339,27 @@ nav {
 
 header {
     font-family: hero-new, sans-serif;
-    font-weight: 400;
-    font-size: 3.4vw;
+    font-weight: 600;
+    font-size: 2vw;
     background-color: #f8eb2b;
     padding: 2vw;
     box-shadow: 0.1vw 0.2vw 1vw 0.4vw #9c6e00;
     margin-bottom: 4.51vw;
     margin-top: 4vh;
     border-radius: 7vw;
-    width: 80vw;
-    color: #965b69;
+    /* width: 80vw; */
+    /* color: #965b69; */
     height: 27vw;
     align-self: center;
     box-shadow: inset 0 0 5px 2px #0000008a;
     text-align-last: center;
+}
+
+#header-line{
+    color: black;
+    font-size: 2vw;
+    margin: 10px;
+    margin-bottom: 1vw;
 }
 
 #about {
@@ -335,9 +369,9 @@ header {
     /* padding: 3em; */
     /* margin: 1em; */
     margin-bottom: 4vw;
-    width: 80vw;
+    /* width: 80vw; */
     padding-top: 2vw;
-    width: 80vw;
+    /* width: 80vw; */
     align-self: center;
     box-shadow: inset 0px 0px 6px 0px #000000b5;
 }
@@ -392,6 +426,7 @@ img {
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     background: #65cbff;
+    padding-top: 2vw;
     box-shadow: inset 0px 10px 8px 8px #0865ab73;
 }
 
